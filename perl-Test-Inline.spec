@@ -1,9 +1,12 @@
 #
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Test
 %define		pnam	Inline
 Summary:	Test::inline Perl module - Embedded tests
-Summary(pl):	Modu³ Perla Test::Inline - funkcje testuj±ce 
+Summary(pl):	Modu³ Perla Test::Inline - wbudowane testy
 Name:		perl-Test-Inline
 Version:	0.15
 Release:	1
@@ -16,10 +19,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Test::Inline Perl module provides utility functions to embedded tests
+Test::Inline Perl module provides utility functions to embedded tests.
 
 %description -l pl
-Modu³ Perla Test::Data udostêpnia funkcje us³ugowe sprawdzaj±ce
+Modu³ Perla Test::Data udostêpnia funkcje pomocnicze do wbudowanych
+testów.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -27,6 +31,7 @@ Modu³ Perla Test::Data udostêpnia funkcje us³ugowe sprawdzaj±ce
 %build
 perl Makefile.PL
 %{__make}
+
 %{!?_without_tests:%{__make} test}
 
 %install
