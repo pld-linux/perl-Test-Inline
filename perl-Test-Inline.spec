@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Test
-%define		pnam	Inline
+%define	pdir	Test
+%define	pnam	Inline
 Summary:	Test::inline Perl module - embedded tests
 Summary(pl):	Modu³ Perla Test::Inline - wbudowane testy
 Name:		perl-Test-Inline
