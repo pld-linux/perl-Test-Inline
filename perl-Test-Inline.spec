@@ -48,6 +48,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes
 %{perl_vendorlib}/Test/*.pm
 %dir %{perl_vendorlib}/Test/Inline
-%dir %{perl_vendorlib}/Pod
 %{perl_vendorlib}/Pod/*.pm
 %{_mandir}/man3/*
