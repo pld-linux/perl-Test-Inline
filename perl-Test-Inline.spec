@@ -10,7 +10,8 @@ Summary(pl):	Modu³ Perla Test::Inline - wbudowane testy
 Name:		perl-Test-Inline
 Version:	0.16
 Release:	1
-License:	GPL or Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	91296ea0606489b1bc2d62bbf08e44eb
