@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Test
 %define		pnam	Inline
-Summary:	Test::inline Perl module - Embedded tests
+Summary:	Test::inline Perl module - embedded tests
 Summary(pl):	Modu³ Perla Test::Inline - wbudowane testy
 Name:		perl-Test-Inline
 Version:	0.16
