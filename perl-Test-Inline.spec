@@ -9,11 +9,11 @@ Summary:	Test::inline Perl module - embedded tests
 Summary(pl):	Modu³ Perla Test::Inline - wbudowane testy
 Name:		perl-Test-Inline
 Version:	0.16
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	91296ea0606489b1bc2d62bbf08e44eb
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -49,7 +49,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes
-%{perl_vendorlib}/%{pdir}/*.pm
-%dir %{perl_vendorlib}/%{pdir}/%{pnam}
+%{_bindir}/pod2test
+%{perl_vendorlib}/Test/*.pm
+%dir %{perl_vendorlib}/Test/Inline
 %{perl_vendorlib}/Pod/*.pm
-%{_mandir}/man3/*
+%{_mandir}/man[13]/*
