@@ -6,7 +6,7 @@
 %define		pdir	Test
 %define		pnam	Inline
 Summary:	Test::inline Perl module - embedded tests
-Summary(pl):	Modu³ Perla Test::Inline - wbudowane testy
+Summary(pl.UTF-8):   ModuÅ‚ Perla Test::Inline - wbudowane testy
 Name:		perl-Test-Inline
 Version:	0.16
 Release:	3
@@ -23,9 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Test::Inline Perl module provides utility functions to embedded tests.
 
-%description -l pl
-Modu³ Perla Test::Data udostêpnia funkcje pomocnicze do wbudowanych
-testów.
+%description -l pl.UTF-8
+ModuÅ‚ Perla Test::Data udostÄ™pnia funkcje pomocnicze do wbudowanych
+testÃ³w.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
