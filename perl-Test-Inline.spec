@@ -6,7 +6,7 @@
 %define		pdir	Test
 %define		pnam	Inline
 Summary:	Test::inline Perl module - embedded tests
-Summary(pl.UTF-8):   Moduł Perla Test::Inline - wbudowane testy
+Summary(pl.UTF-8):	Moduł Perla Test::Inline - wbudowane testy
 Name:		perl-Test-Inline
 Version:	0.16
 Release:	3
