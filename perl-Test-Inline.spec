@@ -9,7 +9,7 @@ Summary:	Test::inline Perl module - embedded tests
 Summary(pl.UTF-8):	Moduł Perla Test::Inline - wbudowane testy
 Name:		perl-Test-Inline
 Version:	2.207
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -23,7 +23,7 @@ BuildRequires:	perl-Class-Autouse
 BuildRequires:	perl-File-chmod
 BuildRequires:	perl-File-Find-Rule
 BuildRequires:	perl-File-Flat
-BuildRequires:	perl-File-Remove
+BuildRequires:	perl-File-Remove >= 0.38
 BuildRequires:	perl-File-Slurp
 BuildRequires:	perl-Params-Util
 BuildRequires:	perl-Test-Script
