@@ -18,7 +18,15 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
+BuildRequires:	perl-Algorithm-Dependency
+BuildRequires:	perl-Class-Autouse
+BuildRequires:	perl-File-chmod
+BuildRequires:	perl-File-Find-Rule
+BuildRequires:	perl-File-Flat
+BuildRequires:	perl-File-Remove
+BuildRequires:	perl-File-Slurp
 BuildRequires:	perl-Params-Util
+BuildRequires:	perl-Test-Script
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
