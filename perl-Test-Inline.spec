@@ -8,13 +8,13 @@
 Summary:	Test::inline Perl module - embedded tests
 Summary(pl.UTF-8):	Moduł Perla Test::Inline - wbudowane testy
 Name:		perl-Test-Inline
-Version:	2.207
-Release:	2
+Version:	2.208
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	7530c2dee1d9547acd78dd4ca17ffbb3
+# Source0-md5:	9f608e40b0c65d54eb430748b52393cc
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -26,6 +26,7 @@ BuildRequires:	perl-File-Flat
 BuildRequires:	perl-File-Remove >= 0.38
 BuildRequires:	perl-File-Slurp
 BuildRequires:	perl-Params-Util
+BuildRequires:	perl-Test-ClassAPI
 BuildRequires:	perl-Test-Script
 %endif
 BuildArch:	noarch
