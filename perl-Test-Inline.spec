@@ -8,27 +8,30 @@
 Summary:	Test::inline Perl module - embedded tests
 Summary(pl.UTF-8):	Moduł Perla Test::Inline - wbudowane testy
 Name:		perl-Test-Inline
-Version:	2.211
+Version:	2.212
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	214c841a80f9650dd6b73c422221a22d
+Source0:	http://www.cpan.org/modules/by-module/Test/ADAMK/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	381fd25782370894d3335996527f6aef
 URL:		http://search.cpan.org/dist/Test-Inline/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-Algorithm-Dependency
-BuildRequires:	perl-Class-Autouse
-BuildRequires:	perl-File-chmod
-BuildRequires:	perl-File-Find-Rule
-BuildRequires:	perl-File-Flat
+BuildRequires:	perl(Getopt::Long) >= 2.34
+BuildRequires:	perl-Algorithm-Dependency >= 1.02
+BuildRequires:	perl-Config-Tiny >= 2.00
+BuildRequires:	perl-File-Find-Rule >= 0.26
+BuildRequires:	perl-File-Flat >= 1.00
 BuildRequires:	perl-File-Remove >= 0.38
-BuildRequires:	perl-File-Slurp
-BuildRequires:	perl-Params-Util
-BuildRequires:	perl-Test-ClassAPI
-BuildRequires:	perl-Test-Script
+BuildRequires:	perl-File-Slurp >= 9999.04
+BuildRequires:	perl-File-chmod >= 0.31
+BuildRequires:	perl-Params-Util >= 0.21
+BuildRequires:	perl-Pod-Tests >= 0.18
+BuildRequires:	perl-Test-ClassAPI >= 1.02
+BuildRequires:	perl-Test-Script >= 1.02
+BuildRequires:	perl-Test-Simple >= 0.42
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -63,6 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes
 %attr(755,root,root) %{_bindir}/inline2test
-%{perl_vendorlib}/Test/*.pm
+%{perl_vendorlib}/Test/Inline.pm
 %{perl_vendorlib}/Test/Inline
-%{_mandir}/man[13]/*
+%{_mandir}/man1/inline2test.1p*
+%{_mandir}/man3/Test::Inline*.3pm*
